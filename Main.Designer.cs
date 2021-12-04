@@ -50,6 +50,7 @@ namespace Numero
             this.plusButton.TabIndex = 1;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = true;
+            this.plusButton.Click += new System.EventHandler(this.plusButton_Click);
             // 
             // Main
             // 
