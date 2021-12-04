@@ -38,7 +38,7 @@ namespace Numero
 
         private void plusButton_Click(object sender, EventArgs e)
         {
-
+            Counter += 1;
         }
     }
 }
