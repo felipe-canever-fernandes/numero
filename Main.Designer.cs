@@ -36,7 +36,7 @@ namespace Numero
             // counterLabel
             // 
             this.counterLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.counterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.counterLabel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.counterLabel.Location = new System.Drawing.Point(0, 0);
             this.counterLabel.Name = "counterLabel";
             this.counterLabel.Size = new System.Drawing.Size(181, 31);
