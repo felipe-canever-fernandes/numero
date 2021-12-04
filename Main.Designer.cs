@@ -30,6 +30,7 @@ namespace Numero
         {
             this.counterLabel = new System.Windows.Forms.Label();
             this.plusButton = new System.Windows.Forms.Button();
+            this.minusButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // counterLabel
@@ -45,7 +46,7 @@ namespace Numero
             // 
             // plusButton
             // 
-            this.plusButton.Location = new System.Drawing.Point(79, 43);
+            this.plusButton.Location = new System.Drawing.Point(93, 34);
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(23, 23);
             this.plusButton.TabIndex = 1;
@@ -53,11 +54,21 @@ namespace Numero
             this.plusButton.UseVisualStyleBackColor = true;
             this.plusButton.Click += new System.EventHandler(this.plusButton_Click);
             // 
+            // minusButton
+            // 
+            this.minusButton.Location = new System.Drawing.Point(64, 34);
+            this.minusButton.Name = "minusButton";
+            this.minusButton.Size = new System.Drawing.Size(23, 23);
+            this.minusButton.TabIndex = 2;
+            this.minusButton.Text = "-";
+            this.minusButton.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(181, 81);
+            this.ClientSize = new System.Drawing.Size(181, 68);
+            this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.counterLabel);
             this.Name = "Main";
@@ -70,6 +81,7 @@ namespace Numero
 
         private System.Windows.Forms.Label counterLabel;
         private System.Windows.Forms.Button plusButton;
+        private System.Windows.Forms.Button minusButton;
     }
 }
 
