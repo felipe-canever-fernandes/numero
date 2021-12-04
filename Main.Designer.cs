@@ -28,20 +28,35 @@ namespace Numero
         /// </summary>
         private void InitializeComponent()
         {
+            this.counterLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // counterLabel
+            // 
+            this.counterLabel.AutoSize = true;
+            this.counterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.counterLabel.Location = new System.Drawing.Point(128, 9);
+            this.counterLabel.Name = "counterLabel";
+            this.counterLabel.Size = new System.Drawing.Size(29, 31);
+            this.counterLabel.TabIndex = 0;
+            this.counterLabel.Text = "0";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.counterLabel);
             this.Name = "Main";
             this.Text = "Numero";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label counterLabel;
     }
 }
 
