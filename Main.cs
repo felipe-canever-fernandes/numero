@@ -67,5 +67,16 @@ namespace Numero
                 writer.Write(Counter);
             }
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show
+            (
+                "Numero was created by Felipe Canever Fernandes <felipe.canever.fernandes@outlook.com>",
+                "About Numero",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }
