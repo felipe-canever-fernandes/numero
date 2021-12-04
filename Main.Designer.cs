@@ -76,6 +76,7 @@ namespace Numero
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Numero";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.ResumeLayout(false);
 
         }

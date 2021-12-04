@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,6 +11,7 @@ namespace Numero
 {
     public partial class Main : Form
     {
+        const string fileName = "counter.dat";
         private int counter = 0;
 
         private int Counter
@@ -45,6 +47,14 @@ namespace Numero
         private void plusButton_Click(object sender, EventArgs e)
         {
             Counter += 1;
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Create)))
+            {
+                writer.Write(Counter);
+            }
         }
     }
 }
