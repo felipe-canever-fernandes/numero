@@ -36,15 +36,16 @@ namespace Numero
             // 
             this.counterLabel.AutoSize = true;
             this.counterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.counterLabel.Location = new System.Drawing.Point(12, 9);
+            this.counterLabel.Location = new System.Drawing.Point(76, 9);
             this.counterLabel.Name = "counterLabel";
             this.counterLabel.Size = new System.Drawing.Size(29, 31);
             this.counterLabel.TabIndex = 0;
             this.counterLabel.Text = "0";
+            this.counterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // plusButton
             // 
-            this.plusButton.Location = new System.Drawing.Point(47, 13);
+            this.plusButton.Location = new System.Drawing.Point(79, 43);
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(23, 23);
             this.plusButton.TabIndex = 1;
@@ -56,7 +57,7 @@ namespace Numero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(196, 55);
+            this.ClientSize = new System.Drawing.Size(181, 81);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.counterLabel);
             this.Name = "Main";
