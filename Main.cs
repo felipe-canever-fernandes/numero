@@ -36,7 +36,18 @@ namespace Numero
         public Main()
         {
             InitializeComponent();
-            Counter = 0;
+
+            try
+            {
+                using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
+                {
+                    Counter = reader.ReadInt32();
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                Counter = 0;
+            }
         }
 
         private void minusButton_Click(object sender, EventArgs e)
