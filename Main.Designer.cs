@@ -66,12 +66,14 @@ namespace Numero
             // 
             // Main
             // 
+            this.AccessibleName = "m";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(181, 68);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.counterLabel);
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.Text = "Numero";
             this.ResumeLayout(false);
