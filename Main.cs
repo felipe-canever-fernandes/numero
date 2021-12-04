@@ -26,6 +26,7 @@ namespace Numero
 
                 counter = value;
 
+                minusButton.Enabled = counter > 0;
                 counterLabel.Text = counter.ToString();
             }
         }
@@ -34,6 +35,11 @@ namespace Numero
         {
             InitializeComponent();
             Counter = 0;
+        }
+
+        private void minusButton_Click(object sender, EventArgs e)
+        {
+            Counter -= 1;
         }
 
         private void plusButton_Click(object sender, EventArgs e)
