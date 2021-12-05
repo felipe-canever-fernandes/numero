@@ -54,6 +54,14 @@ namespace Numero
             }
         }
 
+        private void SaveCounter()
+        {
+            using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Create)))
+            {
+                writer.Write(Counter);
+            }
+        }
+
         private void minusButton_Click(object sender, EventArgs e)
         {
             Counter -= 1;
@@ -66,10 +74,7 @@ namespace Numero
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Create)))
-            {
-                writer.Write(Counter);
-            }
+            SaveCounter();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
