@@ -36,7 +36,11 @@ namespace Numero
         public Main()
         {
             InitializeComponent();
+            LoadCounter();
+        }
 
+        private void LoadCounter()
+        {
             try
             {
                 using (BinaryReader reader = new BinaryReader(File.Open(fileName, FileMode.Open)))
